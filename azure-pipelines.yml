@@ -26,11 +26,11 @@ stages:
   - deployment: VMDeploy
     displayName: web
     environment:
-      name: <environment name>
+      name: Nathan
       resourceType: VirtualMachine
     strategy:
         rolling:
-          maxParallel: 2  #for percentages, mention as x%
+          maxParallel: 1  #for percentages, mention as x%
           preDeploy:
             steps:
             - download: current
